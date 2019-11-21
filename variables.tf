@@ -17,7 +17,7 @@ variable "load_balancer_type" {
 
 variable "security_groups" {
   description = "List of Security Groups attached to LoadBalancer"
-  type        = list(string)
+  type        = string
 }
 
 variable "subnets" {
