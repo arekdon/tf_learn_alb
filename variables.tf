@@ -24,3 +24,20 @@ variable "subnets" {
   description = "List of subnets where LoadBalancer is attached"
   type        = list(string)
 }
+
+variable "port" {
+  description = "Port to which traffic is forwarded"
+  type        = string
+  default     = 80
+}
+
+variable "protocol" {
+  description = "Protocol of TG"
+  type        = string
+  default     = "http"
+}
+
+variable "vpcid" {
+  description = "Target group's VPC id"
+  type        = string
+}
