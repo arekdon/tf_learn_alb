@@ -14,6 +14,6 @@ resource "aws_lb" "v2lb" {
 
 resource "aws_lb_target_group" "v2tg" {
   port     = var.port
-  protocol = var.protocol
+  protocol = upper(var.protocol)
   vpc_id   = var.vpcid
 }
