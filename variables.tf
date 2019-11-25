@@ -41,3 +41,13 @@ variable "vpcid" {
   description = "Target group's VPC id"
   type        = string
 }
+
+variable "listener_port" {
+  description = "listener's port"
+  type        = string
+}
+
+variable "listener_protocol" {
+  description = "listener's protocol"
+  type        = string
+}
